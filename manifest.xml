@@ -2,22 +2,18 @@
 <manifest>
   <remote fetch="https://github.com/Realme-2-Pro-Resources"
           name="rmx1801"
-          revision="yaap/sixteen" />
+          revision="lineage-23.0" />
 
-  <remove-project name="android_device_qcom_sepolicy" />
-  <remove-project name="device_lineage_sepolicy" />
-  <remove-project name="packages_modules_Connectivity" />
-  <remove-project name="android_hardware_qcom_audio" path="hardware/qcom-caf/msm8998/audio" />
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="rmx1801" />
+  <remove-project name="LineageOS/android_device_qcom_sepolicy" path="device/qcom/sepolicy-legacy-um" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" path="hardware/qcom-caf/msm8998/audio" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="rmx1801" />
   <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" groups="qcom,legacy-qcom" remote="rmx1801" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="rmx1801" />
 
   <!-- Sync required sepolicy -->
-  <project path="hardware/oppo" name="roms-experimental/android_hardware_oppo" remote="github" revision="yaap/sixteen" />
+  <project path="hardware/oppo" name="roms-experimental/android_hardware_oppo" remote="github" />
 
   <!-- Sync devices trees -->
   <project path="device/realme/RMX1801" name="device_realme_RMX1801" remote="rmx1801" />
-  <project path="kernel/realme/sdm660" name="kernel_realme_sdm660" remote="rmx1801" revision="lineage-23.0" />
+  <project path="kernel/realme/sdm660" name="kernel_realme_sdm660" remote="rmx1801" />
   <project path="vendor/realme/RMX1801" name="vendor_realme_RMX1801" remote="rmx1801" />
 </manifest>
