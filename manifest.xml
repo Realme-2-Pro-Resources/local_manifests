@@ -2,10 +2,10 @@
 <manifest>
   <remote fetch="https://github.com/Realme-2-Pro-Resources"
           name="rmx1801"
-          revision="lineage-22.2" />
+          revision="lineage-23.2" />
 
   <!-- Sync required hals / sepolicies -->
-  <project path="hardware/oppo" name="roms-experimental/android_hardware_oppo" remote="github" revision="lineage-22.2" />
+  <project path="hardware/oppo" name="roms-experimental/android_hardware_oppo" remote="github" revision="lineage-23.2" />
 
   <!-- Sync devices trees -->
   <project path="device/realme/RMX1801" name="device_realme_RMX1801" remote="rmx1801" />
