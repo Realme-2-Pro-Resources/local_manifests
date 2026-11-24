@@ -4,11 +4,15 @@
           name="rmx1801"
           revision="lineage-23.2" />
 
-  <!-- Sync required hals / sepolicies -->
+  <remove-project name="LineageOS/android_hardware_lineage_interfaces" />
+
+  <!-- Sync required hals / sepolicies / apps -->
+  <project path="hardware/lineage/interfaces" name="roms-experimental/android_hardware_lineage_interfaces" remote="github" revision="lineage-23.2" />
   <project path="hardware/oppo" name="roms-experimental/android_hardware_oppo" remote="github" revision="lineage-23.2" />
+  <project path="packages/apps/DolbyAtmos" name="roms-experimental/android_packages_apps_DolbyAtmos" remote="github" revision="lineage-23.2" />
 
   <!-- Sync devices trees -->
-  <project path="device/realme/RMX1801" name="device_realme_RMX1801" remote="rmx1801" />
-  <project path="kernel/realme/sdm660" name="kernel_realme_sdm660" remote="rmx1801" />
-  <project path="vendor/realme/RMX1801" name="vendor_realme_RMX1801" remote="rmx1801" />
+  <project path="device/realme/RMX1801" name="android_device_realme_RMX1801-4.19" remote="rmx1801" />
+  <project path="kernel/realme/sdm660" name="kernel_realme_sdm660-4.19" remote="rmx1801" />
+  <project path="vendor/realme/RMX1801" name="android_vendor_realme_RMX1801-4.19" remote="rmx1801" />
 </manifest>
